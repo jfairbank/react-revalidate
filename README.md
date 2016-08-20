@@ -9,7 +9,7 @@ Validate React components with
 React-revalidate makes integrating your React components with revalidate
 simpler. The API is still a WIP, but for now react-revalidate exports a HOC
 (higher order component) that validates a component's props according to
-validate function generated from revalidate.
+a validate function generated from revalidate.
 
 ## Install
 
