@@ -1,0 +1,119 @@
+{
+  "name": "react-revalidate",
+  "version": "0.1.0",
+  "description": "Validate React components with revalidate",
+  "main": "lib/index.js",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "lint": "eslint src test",
+    "prepublish": "npm run clean && npm run build",
+    "test": "ava",
+    "watch:test": "ava -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfairbank/react-revalidate.git"
+  },
+  "keywords": [
+    "revalidate",
+    "validate",
+    "validation",
+    "form",
+    "react",
+    "higher order component",
+    "hoc"
+  ],
+  "author": "Jeremy Fairbank <elpapapollo@gmail.com> (http://jeremyfairbank.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfairbank/react-revalidate/issues"
+  },
+  "homepage": "https://github.com/jfairbank/react-revalidate#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-plugin-transform-export-extensions": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015-loose": "^7.0.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.11.6",
+    "classnames": "^2.2.5",
+    "enzyme": "^2.4.1",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-import-resolver-node": "^0.2.2",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.1",
+    "react": "^15.3.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "revalidate": "^0.4.0",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "peerDependencies": {
+    "revalidate": "<1.0.0",
+    "react": "^0.14.0 || ^15.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015-loose",
+      "react"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-export-extensions",
+      "transform-object-rest-spread"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "settings": {
+      "import/resolver": "node"
+    },
+    "rules": {
+      "quote-props": [
+        "error",
+        "consistent"
+      ],
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ],
+      "react/jsx-filename-extension": 0,
+      "react/require-extension": 0
+    }
+  },
+  "dependencies": {
+    "object-assign": "^4.1.0",
+    "react-display-name": "^0.2.0"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": "inherit"
+  }
+}

@@ -1,0 +1,1 @@
+export validateComponent from './validateComponent';
