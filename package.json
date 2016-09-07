@@ -61,7 +61,7 @@
     "redux": "^3.5.2",
     "revalidate": "^0.4.0",
     "rimraf": "^2.5.4",
-    "webpack": "^1.13.1",
+    "webpack": "^1.13.2",
     "webpack-dev-server": "^1.14.1"
   },
   "peerDependencies": {
