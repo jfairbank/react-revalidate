@@ -43,7 +43,7 @@
     "babel-plugin-transform-class-properties": "^6.11.5",
     "babel-plugin-transform-export-extensions": "^6.8.0",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
-    "babel-preset-es2015-loose": "^7.0.0",
+    "babel-preset-es2015-loose": "^8.0.0",
     "babel-preset-react": "^6.11.1",
     "babel-register": "^6.11.6",
     "classnames": "^2.2.5",
